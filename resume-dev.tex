@@ -1,0 +1,129 @@
+%-------------------------
+% Rover Resume - Base Template
+% Link: https://github.com/subidit/rover-resume
+%
+% Shows code for various formatting options for different resume sections.
+% Education and Projects have single-line headers; while Experience uses double-line.
+% Some formatting codes are kept inline; consider \newcommand{cmd}{def}.
+% Excludes hyperref and icons for readability; MVP version.
+% Explore other templates for more options.
+% Mix and match as desired. Be consistent with headers and sub-headers.
+%------------------------
+
+\documentclass[11pt]{article} % fontsize 10pt/11pt/12pt
+
+\usepackage[margin=0.5in, a4paper]{geometry}
+\setcounter{secnumdepth}{0} % remove section numbering
+\usepackage{titlesec}
+\titlespacing{\subsection}{0pt}{*0}{*0} % remove vertical spacing above and below
+\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
+\titleformat*{\subsubsection}{\large\itshape}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep,left=0pt .. \parindent}
+\pagestyle{empty} % remove page number
+\pdfgentounicode=1
+
+
+\begin{document}
+
+\begin{center}
+	\begin{minipage}{0.4\textwidth}
+		{\Huge\bfseries
+			Gaurav Raj % Name Here
+		} \\ \medskip
+		Software Developer \& DevOps Engineer % Title [optional]
+	\end{minipage} \hfill
+	\begin{minipage}{0.5\textwidth}
+		\raggedleft
+		Mobile: +917488930330 \\
+		GitHub: github.com/thehackersbrain \\
+		Email: contact@thehackersbrain.online \\
+		Website: https://thehackersbrain.online \\
+		LinkedIn: linkedin.com/in/thehackersbrainn
+	\end{minipage}
+\end{center}
+
+\section{Education}
+%=================%
+
+\subsection{
+  \begin{minipage}[t]{0.3\textwidth} B.Sc (Hons. Zoology) \end{minipage}
+  \hspace{1.5mm}
+  \begin{minipage}[t]{0.5\textwidth} {\normalfont\itshape Magadh University, Bodh Gaya} \end{minipage}
+  \hfill 2021
+}
+\vspace{5pt}
+\subsection{
+  \begin{minipage}[t]{0.3\textwidth} I.Sc (Science) \end{minipage}
+  \hspace{1.5mm}   \begin{minipage}[t]{0.5\textwidth} {\normalfont\itshape R.R.P. Collage, Bhergawan} \end{minipage}
+  \hfill 2018
+}
+
+\vspace{18pt}
+
+\section{Experience}
+%=================%
+\subsection{Python Developer \hfill Sept 2023 - Nov 2024}
+\subsubsection{Cybercraft Labs Pvt Ltd \hfill Patna, Bihar}
+\vspace{8pt}
+\subsection{Market Representative \hfill Apr 2023 - Sept 2023}
+\subsubsection{Nouveau Medicament Private Limited \hfill Patna, Bihar}
+
+\vspace{18pt}
+
+\section{Certification \& Awards}
+%===============================%
+\begin{enumerate}[label=\null, left=0pt..0pt, itemsep=0pt]
+	\item Software Engineer, HackerRank \hfill 2024
+	\item Problem Solving (Intermediate), HackerRank \hfill 2023
+	\item Java Programming, HackerRank \hfill 2021
+	\item Software Engineer, HackerRank \hfill 2024
+	\item Problem Solving (Intermediate), HackerRank \hfill 2023
+\end{enumerate}
+
+\section{Skills \& Interests}
+%===========================%
+\begin{description}[itemsep=0pt]
+	\item[Frameworks \& Stacks] ReactJS, NextJS, NodeJS, React-Native, Flutter, Laravel, Android Studio
+	\item[Programming] C, C++, Python, Java, Go, Rust, JavaScript, TypeScript, PHP, Kotlin
+	\item[DevOps] Linux, Docker, AWS, GCP, CI/CD, Git, Github/Gitlab, Netlify/Vercel
+	\item[Interests] Book Reading, Blog Writing, Chess, Puzzles
+\end{description}
+
+\section{Projects}
+%=================
+\subsection{Snapgram $|$ \normalfont\textit{https://snapgram-two-self.vercel.app} \hfill A Social Media Platform (i.e. Instagram) - \textbf{2024}}
+\vspace{3pt}
+\begin{itemize}
+  \item \textbf{Tech Stack}: ReactJS, Appwrite, React Query, TypeScript, Vercel, Git, Github
+  \item \textbf{Features}: Authentication System, CRUD-riched Posts System, Complete Backend
+  \item \textbf{Accomplish}: Optimised XYZ by 50\%
+\end{itemize}
+
+\subsection{Carepulse $|$ \normalfont\textit{https://carepulse-theta.vercel.app/} \hfill Healthcare Management System - \textbf{2024}}
+\vspace{3pt}
+\begin{itemize}
+  \item \textbf{Tech Stack}: NextJS, Twilio, Appwrite, Sentry TypeScript, Vercel, Git, Github
+  \item \textbf{Features}: Complete CRUD System, Admin Dashboard, SMS \& Email Notifications
+  \item \textbf{Accomplish}: Optimised XYZ by 50\%
+\end{itemize}
+
+\subsection{CPUInfo OS $|$ \normalfont\textit{github.com/thehackersbrain/cpuinfo-os} \hfill A Complete OS from Scratch - \textbf{2022}}
+\vspace{3pt}
+\begin{itemize}
+  \item \textbf{Tech Stack}: C/C++, x86-64 Assembly, Bash Scripting, Low-level emulation (i.e qemu/kvm)
+  \item \textbf{Features}: Custom written bootloader, kernel, shell, high-level utilities (i.e text editors, terminal)
+  \item \textbf{Accomplish}: Optimised XYZ by 50\%
+\end{itemize}
+
+\subsection{Hiddenwave $|$ \normalfont\textit{github.com/thehackersbrain/hiddenwave} \hfill Audio Steganography Tool - \textbf{2021}}
+\vspace{3pt}
+\begin{itemize}
+  \item \textbf{Tech Stack}: C/C++, Python, Bash Scripting, CMake, Git/Github
+  \item \textbf{Features}: Hide texts, images, files inside audio files (.mp3, .wav) via low-level audio manipulation.
+  \item \textbf{Accomplish}: Optimised XYZ by 50\%
+\end{itemize}
+
+\end{document}
+
