@@ -8,6 +8,7 @@
 \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
 \titleformat*{\subsubsection}{\large\itshape}
 \usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
 \setlist[itemize]{noitemsep,left=0pt .. \parindent}
 \pagestyle{empty} % remove page number
 \pdfgentounicode=1
@@ -24,31 +25,21 @@
 	\end{minipage} \hfill
 	\begin{minipage}{0.5\textwidth}
 		\raggedleft
-		Mobile: +917488930330 \\
-		GitHub: github.com/thehackersbrain \\
-		Email: contact@thehackersbrain.online \\
-		Website: https://thehackersbrain.online \\
-		LinkedIn: linkedin.com/in/thehackersbrainn
+		Mobile: \href{tel:+917488930330}{+917488930330} \\
+		GitHub: \href{https://github.com/thehackersbrain}{github.com/thehackersbrain} \\
+		Email: \href{mailto:contact@thehackersbrain.online}{contact@thehackersbrain.online} \\
+		Website: \href{https://thehackersbrain.online}{https://thehackersbrain.online} \\
+		LinkedIn: \href{https://www.linkedin.com/in/thehackersbrainn}{linkedin.com/in/thehackersbrainn}
 	\end{minipage}
 \end{center}
 
 \section{Education}
 %=================%
 
-\subsection{
-  \begin{minipage}[t]{0.3\textwidth} B.Sc (Hons. Zoology) \end{minipage}
-  \hspace{1.5mm}
-  \begin{minipage}[t]{0.5\textwidth} {\normalfont\itshape Magadh University, Bodh Gaya} \end{minipage}
-  \hfill 2021
-}
-\vspace{5pt}
-\subsection{
-  \begin{minipage}[t]{0.3\textwidth} I.Sc (Science) \end{minipage}
-  \hspace{1.5mm}   \begin{minipage}[t]{0.5\textwidth} {\normalfont\itshape R.R.P. Collage, Bhergawan} \end{minipage}
-  \hfill 2018
-}
-
-\vspace{18pt}
+\begin{tabular}{@{} p{0.4\textwidth} p{0.50\textwidth} r @{}}
+    \textbf{B.Sc (Hons.) Zoology} & \textit{Magadh University, Bodh Gaya} & \textbf{2021} \\
+    \textbf{I.Sc (Science)} & \textit{R.R.P. College, Bhergawan} & \textbf{2018} \\
+\end{tabular}
 
 \section{Experience}
 %=================%
@@ -63,11 +54,11 @@
 \section{Certification \& Achievements}
 %===============================%
 \begin{enumerate}[label=\null, left=0pt..0pt, itemsep=0pt]
-	\item Software Engineer, HackerRank \hfill 2024
-	\item Java Programming, HackerRank \hfill 2021
-	\item Problem Solving (Intermediate), HackerRank \hfill 2023
-	\item Master C++ Programming From Beginner To Advance, Udemy \hfill 2022
-	\item Applied Linux Command Line and Shell Scripting Zero to Elite, Udemy \hfill 2022
+	\item \href{https://www.hackerrank.com/certificates/94e6bf2ca0ff}{Software Engineer, HackerRank} \hfill 2024
+	\item \href{https://www.hackerrank.com/certificates/d93d5797f424}{Java Programming, HackerRank} \hfill 2021
+	\item \href{https://www.hackerrank.com/certificates/9d44af68b27a}{Problem Solving (Intermediate), HackerRank} \hfill 2023
+	\item \href{https://www.udemy.com/certificate/UC-c3680df9-3c96-4452-a8d3-9467ba731603/}{Master C++ Programming From Beginner To Advance, Udemy} \hfill 2022
+	\item \href{https://www.udemy.com/certificate/UC-29ae3a1d-06ca-4295-8dd9-1602c188b343/}{Applied Linux Command Line and Shell Scripting Zero to Elite, Udemy} \hfill 2022
 \end{enumerate}
 
 \section{Skills \& Interests}
@@ -81,7 +72,7 @@
 
 \section{Projects}
 %=================
-\subsection{Snapgram $|$ \normalfont\textit{https://snapgram-two-self.vercel.app} \hfill A Social Media Platform (i.e. Instagram) - \textbf{2024}}
+\subsection{Snapgram $|$ \normalfont\textit{\href{https://snapgram-two-self.vercel.app}{https://snapgram-two-self.vercel.app}} \hfill A Social Media Platform (i.e. Instagram) - \textbf{2024}}
 \vspace{3pt}
 \begin{itemize}
   \item \textbf{Tech Stack}: ReactJS, Appwrite, React Query, TypeScript, Vercel, Git, Github
@@ -89,7 +80,7 @@
   \item \textbf{Accomplish}: Deeper understanding of authentication \& authorization, handling user data securely.
 \end{itemize}
 
-\subsection{Carepulse $|$ \normalfont\textit{https://carepulse-theta.vercel.app/} \hfill Healthcare Management System - \textbf{2024}}
+\subsection{Carepulse $|$ \normalfont\textit{\href{https://carepulse-theta.vercel.app/}{https://carepulse-theta.vercel.app/}} \hfill Healthcare Management System - \textbf{2024}}
 \vspace{3pt}
 \begin{itemize}
   \item \textbf{Tech Stack}: NextJS, Twilio, Appwrite, Sentry TypeScript, Vercel, Git, Github
@@ -97,7 +88,7 @@
   \item \textbf{Accomplish}: Understanding of async event-driven architecture, file uploads, secure data storage.
 \end{itemize}
 
-\subsection{CPUInfo OS $|$ \normalfont\textit{github.com/thehackersbrain/cpuinfo-os} \hfill A Complete OS from Scratch - \textbf{2022}}
+\subsection{CPUInfo OS $|$ \normalfont\textit{\href{https://github.com/thehackersbrain/cpuinfo-os}{github.com/thehackersbrain/cpuinfo-os}} \hfill A Complete OS from Scratch - \textbf{2022}}
 \vspace{3pt}
 \begin{itemize}
   \item \textbf{Tech Stack}: C/C++, x86-64 Assembly, Bash Scripting, Low-level emulation (i.e qemu/kvm)
@@ -105,7 +96,7 @@
   \item \textbf{Accomplish}: Understanding of OS Internals, memory management, and low-level system programming.
 \end{itemize}
 
-\subsection{Hiddenwave $|$ \normalfont\textit{github.com/thehackersbrain/hiddenwave} \hfill Audio Steganography Tool - \textbf{2021}}
+\subsection{Hiddenwave $|$ \normalfont\textit{\href{https://github.com/thehackersbrain/hiddenwave}{github.com/thehackersbrain/hiddenwave}} \hfill Audio Steganography Tool - \textbf{2021}}
 \vspace{3pt}
 \begin{itemize}
   \item \textbf{Tech Stack}: C/C++, Python, Bash Scripting, CMake, Git/Github
