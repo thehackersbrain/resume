@@ -3,10 +3,10 @@
 % Github: https://github.com/thehackersbrain/resume
 %------------------------
 
-\documentclass[11pt]{article}
+\documentclass[10pt]{article}
 
 % Package loading - grouped by function
-\usepackage[margin=0.5in, a4paper]{geometry}
+\usepackage[margin=0.3in, a4paper]{geometry}
 \usepackage[hidelinks]{hyperref}
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -14,36 +14,38 @@
 % PDF metadata and unicode support
 \pdfgentounicode=1
 \hypersetup{
-    pdftitle={Gaurav Raj - Resume},
+  pdftitle={Gaurav Raj - Security Researcher \& Software Engineer Resume},
     pdfauthor={Gaurav Raj},
     pdfsubject={Resume},
-    pdfkeywords={Red Team, Security, Software Engineer}
-}
+pdfkeywords={Security Researcher, Systems Engineer, Red Team Operator, Penetration Tester, Software Engineer, Rust, C, Assembly, Linux, AWS, GCP}}
 
 % Section formatting - consolidated
 \setcounter{secnumdepth}{0}
 \titleformat{\section}{\large\bfseries\uppercase}{}{}{}[\titlerule]
-\titleformat*{\subsubsection}{\large\itshape}
-\titlespacing{\subsection}{0pt}{*0}{*0}
-\titlespacing{\subsubsection}{0pt}{*0}{*0}
+\titleformat*{\subsubsection}{\normalsize\itshape}
 
-% List formatting - optimized spacing
-\setlist[itemize]{noitemsep, topsep=2pt, leftmargin=2em}
-\setlist[enumerate]{noitemsep, topsep=0pt, left=0pt..0pt}
-\setlist[description]{noitemsep, topsep=0pt}
+% Adjust these values to squeeze/expand vertical space
+\titlespacing{\section}{0pt}{4pt}{3pt}     
+\titlespacing{\subsection}{0pt}{2pt}{0pt}   
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+
+% List formatting
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=2em}
+\setlist[enumerate]{noitemsep, topsep=0pt, leftmargin=1.2em}
+\setlist[description]{noitemsep, topsep=0pt, leftmargin=0.5em}
 
 % Remove page numbers
 \pagestyle{empty}
 
 % Custom commands for consistency
 \newcommand{\resumeSubheading}[4]{
-    \subsection{#1 \hfill #2}
-    \subsubsection{#3 \hfill #4}
-    \vspace{8pt}
+    \subsection*{#1 \hfill #2}
+    \subsubsection*{#3 \hfill #4}
+    \vspace{2pt}
 }
 
 \newcommand{\projectSubheading}[4]{
-    \subsection{#1 $|$ \normalfont\textit{\href{#2}{#3}} \hfill #4}
+    \subsection*{#1 $|$ \normalfont\textit{\href{#2}{#3}} \hfill #4}
     \vspace{3pt}
 }
 
@@ -51,101 +53,108 @@
 
 % Header - optimized layout
 \begin{center}
-	\begin{minipage}{0.4\textwidth}
+	\begin{minipage}{0.65\textwidth}
 		{\Huge\bfseries Gaurav Raj} \\
 		\\
-		Red Team OP \& Software Engineer \\
+		\textbf{Security Researcher $\cdot$ Systems Engineer $\cdot$ Open Source Architect} \newline
 		Patna, Bihar, India
 	\end{minipage} \hfill
-	\begin{minipage}{0.5\textwidth}
+	\begin{minipage}{0.30\textwidth}
 		\raggedleft
 		\href{tel:+917488930330}{Mobile: +917488930330} \\
 		\href{mailto:gaurav@thehackersbrain.xyz}{Email: gaurav@thehackersbrain.xyz} \\
 		\href{https://github.com/thehackersbrain}{GitHub: github.com/thehackersbrain} \\
-		\href{https://thehackersbrain.xyz/}{Website: https://thehackersbrain.xyz/} \\
-		\href{https://www.linkedin.com/in/thehackersbrainn}{LinkedIn: linkedin.com/in/thehackersbrainn}
+		\href{https://thehackersbrain.xyz/}{Website: thehackersbrain.xyz} \\
+		\href{https://www.linkedin.com/in/thehackersbrainn}{LinkedIn: @thehackersbrainn}
 	\end{minipage}
 \end{center}
 
-\section{Education}
+%------------------------------------------------------------------------------------
+%   PROFILE
+%------------------------------------------------------------------------------------
+\section{Profile}
+\noindent Offensive Security Researcher \& Systems Engineer with \textbf{8 years of continuous open-source contribution} (1,600+ commits in 2025 alone). Skilled in \textbf{low-level programming (C/ASM/Rust)}, OS architecture, and \textbf{Offensive Security}. Creator of the \textbf{BerserkArch} Linux distribution. Bridging the gap between Kernel-level Engineering and Full-Stack App Development.
 
-\begin{tabular}{@{} p{0.4\textwidth} p{0.50\textwidth} r @{}}
-	\textbf{B.Sc (Hons.) Zoology} & \textit{Magadh University, Bodh Gaya} & \textbf{2021} \\
-	\textbf{I.Sc (Science)}       & \textit{R.R.P. College, Bhergawan}    & \textbf{2018} \\
-\end{tabular}
 
-\section{Experience}
-
-\resumeSubheading
-{Python Developer}{Sept 2023 - Nov 2024}
-{Cybercraft Labs Pvt Ltd}{Patna, Bihar}
-
-\resumeSubheading
-{Market Representative}{Apr 2023 - Sept 2023}
-{Nouveau Medicament Private Limited}{Patna, Bihar}
-
-\section{Certification \& Awards}
-
-\begin{enumerate}[label=\null]
-	\item \href{https://tryhackme.com/p/thehackersbrain}{Top 1\% on TryHackMe} \hfill 08/2021 - Present
-	\item \href{https://www.instagram.com/p/CpqIzPHPiM5/}{Jet Fortress (External Web Pentest), HackTheBox} \hfill 2023
-	\item \href{https://www.udemy.com/certificate/UC-11c0ac06-52c6-4b05-b48a-a91552b8eeed/}{Computer Forensics Course PRO: CFCT+, Udemy} \hfill 2023
-	\item \href{https://www.udemy.com/certificate/UC-2d40b62d-ed80-4b82-9922-896ee12cb989/}{Reverse Engineering \& Malware Analysis x64/32: CRMA+, Udemy} \hfill 2023
-	\item \href{https://www.udemy.com/certificate/UC-4ae950ef-117a-4a64-b845-c545d7714d77/}{Active Directory Pentesting - Red Team Hacking, Udemy} \hfill 2023
-\end{enumerate}
-
-\section{Skills \& Interests}
+\section{Technical Arsenal}
 
 \begin{description}
-	\item[Hacking] Red Team Operations/Penetration Testing, Reverse Engineering, Web Application Security
-	\item[Security Tools] Burpsuite, Cobalt Strike, Sliver, BloodHound, Wireshark, IDA Pro, CrackMapExec
-	\item[Programming] C, C++, Python, Java, Go, Rust, Zig, JavaScript, Bash, PowerShell, TypeScript, PHP
-	\item[Development] Backend, Frontend, Web/Mobile/Desktop Apps, APIs, Systems (Low Level), DSA
-	\item[DevOps] Linux, Docker, Kubernetes, AWS, GCP, CI/CD, Git, GitHub/GitLab, Vagrant, Terraform
-	\item[Tooling] Vim, Tmux, GNU toolchain, QEMU/KVM, clang/llvm, gdb/lldb, strace, lsof, tcpdump
-	\item[Soft Skills] Problem Solving, Agile Development, Communication, Technical Writing, Code Review
+	\item[Core Languages] C, C++, Assembly, Rust, Golang, Python, Bash, Zig, JavaScript, TypeScript, Java.
+	\item[Systems Engineering] Kernel Dev, Memory Management, Bootloaders, Device Driver Development, Embedded/IoT.
+	\item[Full-Stack Dev] Frontend (React/Next.js/Astro.js), Mobile (Android/IOS), Desktop Apps, Backend, Automation, APIs.
+	\item[Cloud \& DevOps] AWS (SES, EC2, S3), GCP, Terraform, Vagrant, Kubernetes, Docker, Github Actions, CI/CD, Linux.
+	\item[Red Teaming \& Pentesting] Reverse Engineering, Network/Internal/Web Penetration Testing, C2 (Cobalt Strike/Sliver).
 \end{description}
 
-\section{Projects}
+\section{Engineering Experience}
+
+\resumeSubheading
+{BerserkArch Linux Distro Project}{Remote}
+{Lead Maintainer, Developer \& Systems Architect}{2025 - Present}
+\begin{itemize}
+	\item \textbf{Distro Architecture:} Designed and actively maintain an Arch Linux-based distro for Red Team Operations \& Dev.
+	\item \textbf{Release Engineering:} Built a fully automated CI/CD pipeline using \textbf{GitHub Actions} and \textbf{Docker} to build ISOs, verify checksums, and deploy to multiple mirrors (SourceForge, R2, Torrent) without human intervention.
+	\item \textbf{Containerization:} Maintain official Docker images on \textbf{Docker Hub}, enabling rapidly deployable security environments.
+	\item \textbf{Security Hardening:} Added custom kernel patches and pre-configured AppArmor profiles to ensure security for users.
+\end{itemize}
+
+\resumeSubheading
+{Cybercraft Labs Pvt Ltd}{Patna, Bihar}
+{Founder \& Principal Engineer (Security Consultancy)}{Sept 2023 -- Nov 2024}
+\begin{itemize}
+	\item \textbf{Agency Leadership:} Founded and operated an independent security consultancy, managing client lifecycles from technical consultation to delivery of penetration testing and cloud security solutions.
+	\item \textbf{Cloud Architecture:} Managed hybrid cloud infrastructure (AWS/GCP) for clients, configuring secure transactional mail servers using \textbf{AWS SES} (SPF/DKIM/DMARC) and hardening EC2 instances.
+	\item \textbf{Software Development} Developed full-stack web applications, desktop tools, and custom reconnaissance automation (Python/Go), optimizing client workflows and reducing manual testing time by 40\%.
+\end{itemize}
+
+\section{Key R\&D Projects}
 
 \projectSubheading
-{Berserk Arch}{https://berserkarch.xyz/}{berserkarch.xyz}
-{Hacking \& Dev-Ready Linux Distro - \textbf{2025}}
+{THBOS (Custom x86 Kernel)}{https://github.com/thehackersbrain/cpuinfo-os}{Source Code}
+{\textit{Systems Programming (C, Assembly \& Zig)}}
 \begin{itemize}
-	\item \textbf{Tech}: Tor, Linux, ISO building, Systems Design, Package Management, Git
-	\item \textbf{Features}: Amnesic live system, native Tor integration, comprehensive tools repository
-	\item \textbf{Impact}: OS-level security implementation, live system architecture, anonymous networking
+	\item \textbf{Kernel Dev}: Wrote a 64-bit OS kernel from scratch, implementing a custom \textbf{bootloader} to switch from Real Mode to Protected Mode.
+	\item \textbf{Hardware Interaction}: Directly manipulated \textbf{CPU} registers to use \textit{CPUID} instruction set to fetch processor topology.
 \end{itemize}
+
+\subsection*{CarePulse $|$ \normalfont\textit{\href{https://carepulse-theta.vercel.app/}{Live App}} | \textit{\href{https://github.com/thehackersbrain/carepulse}{Source Code}} \hfill \textit{Healthcare Plaatform (Next.js, TypeScript, Appwrite)}}
 \vspace{3pt}
+\begin{itemize}
+	\item \textbf{Full-Stack Engineering}: Architected a HIPAA-compliant patient management system with complex form validation (Zod), Next.js Server Actions and SMS notifications (Twilio).
+	\item \textbf{System Design}: Built a scalable backend with admin panel with Server Actions for secure data handling.
+\end{itemize}
 
 \projectSubheading
-{Passcraft}{https://github.com/thehackersbrain/passcraft}{github.com/thehackersbrain/passcraft}
-{Password Wordlist Generator - \textbf{2023}}
+{Chip8 Emulator}{https://github.com/thehackersbrain/chip8}{github.com/thehackersbrain/chip8}
+{\textit{Systems Emulation (Rust)}}
 \begin{itemize}
-	\item \textbf{Tech}: Rust, Cargo, Bash, Git
-	\item \textbf{Features}: Target-based wordlist generation for credential attacks
-	\item \textbf{Impact}: Password security research, efficient wordlist algorithms, Rust memory safety
+	\item \textbf{Emulation Logic:} Built a fully functional CHIP-8 emulator in Rust, implementing the fetch-decode-execute cycle and stack management.
+	\item \textbf{Memory Safety:} Leveraged Rust's borrow checker to ensure memory safety while handling raw bytecode execution.
 \end{itemize}
-\vspace{3pt}
 
 \projectSubheading
-{THBOS}{https://github.com/thehackersbrain/cpuinfo-os}{github.com/thehackersbrain/thbos}
-{Custom Operating System from Scratch - \textbf{2022}}
+{HiddenWave}{https://github.com/thehackersbrain/hiddenwave}{github.com/thehackersbrain/hiddenwave}
+{\textit{Steganography Tool (C++ \& Python)}}
 \begin{itemize}
-	\item \textbf{Tech}: C/C++, x86-64 Assembly, Bash, QEMU/KVM
-	\item \textbf{Features}: Custom bootloader, kernel, shell, and high-level utilities (text editor, terminal)
-	\item \textbf{Impact}: Advanced memory management, deep OS internals understanding
+	\item \textbf{Bit Manipulation:} Implemented Least Significant Bit (LSB) encoding algorithms in C++ to hide encrypted payloads inside WAV/MP3 audio.
 \end{itemize}
-\vspace{3pt}
 
-\projectSubheading
-{Hiddenwave}{https://github.com/thehackersbrain/hiddenwave}{github.com/thehackersbrain/hiddenwave}
-{Audio Steganography Tool - \textbf{2021}}
-\begin{itemize}
-	\item \textbf{Tech}: C/C++, Python, Bash, CMake, Git
-	\item \textbf{Features}: Hide text, images, files in audio (.mp3, .wav) via low-level manipulation
-	\item \textbf{Impact}: Audio format internals, memory management, data encoding techniques
+\section{Achievements \& Certifications}
+
+\begin{itemize}[leftmargin=2em]
+	\item \textbf{VulnHub Author:} Architected 2 official vulnerable VMs (\href{https://www.vulnhub.com/entry/blogger-1,675/}{\textit{Blogger}}, \href{https://www.vulnhub.com/entry/corpvision-1,691/}{\textit{CorpVision}}), designing custom exploit chains involving Webmin and Cronjob privilege escalation.
+	\item \textbf{Advanced Security Labs:} Completed \textbf{HackTheBox Fortresses} (Jet) \& \textbf{TryHackMe Networks} (Wreath, Holo), mastering pivoting, AD exploitation, and perimeter breaching.
+	\item \textbf{Global Rankings:} \textbf{Top 1\% on TryHackMe} (CTF) $|$ \textbf{HackerRank Gold Badge} (Problem Solving \& Algorithms).
+	\item \textbf{Certifications:} Certified proficiency in \textbf{Computer Forensics}, \textbf{Malware Analysis}, and \textbf{Active Directory Security} (Udemy/Independent Coursework).
 \end{itemize}
-\vspace{3pt}
+
+
+\section{Education}
+
+\begin{tabular}{@{} p{0.3\textwidth} p{0.43\textwidth} r @{}}
+	\textbf{B.Tech (Computer Science)} & \textit{Patliputra University, Patna}                       & \textbf{3rd Year, (\textit{Pursuing})} \\
+	\textit{Specialization}:           & \textit{Advanced Mathmetics (ie. Calculus, Linear Algebra)} & \textbf{3rd Year, (\textit{Pursuing})} \\
+	\textit{Background}:               & \textit{Transferred from B.Sc (Maths Hons)}.                & \textbf{3rd Year}                      \\
+\end{tabular}
 
 \end{document}
