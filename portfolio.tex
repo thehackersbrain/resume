@@ -1,0 +1,234 @@
+%----------------------------------------------------------------------------------------
+%   GAURAV RAJ - TECHNICAL PORTFOLIO
+%   "The Receipts" - Visual Proof of Engineering Depth
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage[margin=0.5in, a4paper]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontspec}
+\usepackage[most]{tcolorbox}
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\Large\bfseries\color{black}}
+\renewcommand{\cftsecfont}{\color{black}}
+\renewcommand{\cftsecpagefont}{\color{black}}
+
+% Fonts (Standard LaTeX fonts for portability)
+\setmainfont{TeX Gyre Termes}
+\setsansfont{TeX Gyre Heros}
+
+% Formatting
+\pagestyle{empty} % No page numbers
+\titleformat{\section}{\Large\bfseries\sffamily\color{black}}{}{0em}{}[\titlerule]
+
+% Custom Box for Project Descriptions
+\newtcolorbox{projectbox}[2][]{
+    colback=gray!5!white,
+    colframe=gray!75!black,
+    title={\textbf{#2} \hfill \normalfont\small #1}, % Title Left, Link Right
+    fonttitle=\sffamily,
+    sharp corners,
+    boxrule=0.5pt,
+    width=\textwidth
+}
+% Hyperlink Setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   HEADER
+%----------------------------------------------------------------------------------------
+
+
+\begin{center}
+	{\Huge \textbf{\sffamily Gaurav Raj}} \\ \vspace{5pt}
+	{\Large \textbf{Technical Portfolio \& Engineering Evidence}} \\ \vspace{5pt}
+	\small
+	\href{https://github.com/thehackersbrain}{github.com/thehackersbrain} $|$
+	\href{https://thehackersbrain.xyz/}{thehackersbrain.xyz}
+\end{center}
+
+\vspace{1em}
+
+\begin{center}
+	\textit{"A visual breakdown of key systems engineering, full-stack projects, and operational achievements."}
+\end{center}
+
+\vspace{1em}
+
+%--------------------------
+\tableofcontents
+\newpage
+%--------------------------
+
+%----------------------------------------------------------------------------------------
+%   PROJECT 1: THBOS (The Kernel)
+%----------------------------------------------------------------------------------------
+\section{Systems Programming}
+
+\subsection{Custom x86 Kernel \& Bootloader (THBOS)}
+
+\begin{projectbox}[\href{https://github.com/thehackersbrain/thbos}{Source Code}]{Project Overview}
+	\textbf{Stack:} C, Assembly (x86), Makefile, QEMU, GDB \\
+	\textbf{Description:} A 64-bit operating system kernel written from scratch. This project demonstrates deep understanding of \textbf{Protected Mode switching}, \textbf{Memory Management (Paging)}, and \textbf{Direct Hardware Interaction (CPUID)}.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\textwidth]{./images/thbos.png}
+	\caption{\textit{THBOS Kernel booting in QEMU environment. The screenshot shows the custom bootloader handoff and the kernel successfully probing CPU hardware details.}}
+\end{figure}
+
+\vspace{1em}
+\subsection{Chip8 Interpreter \& Emulator}
+
+\begin{projectbox}[\href{https://github.com/thehackersbrain/chip8}{Source Code}]{Project Overview}
+	\textbf{Stack:} Rust, SDL2, Cargo \\
+	\textbf{Description:} A fully functional interpreter for the CHIP-8 programming language. Implements the complete \textit{Fetch-Decode-Execute} cycle, handling opcode parsing, stack management, and graphics rendering via bitwise operations. Built to master Rust's memory safety model (ownership/borrowing) in a low-level context.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./images/chip8.png}
+	\caption{\textit{Chip8 Emulator running a ROM file. Displays the custom graphics rendering pipeline and real-time debug output of the CPU stack.}}
+\end{figure}
+
+\newpage
+%----------------------------------------------------------------------------------------
+%   PROJECT 2: BERSERKARCH (The Distro)
+%----------------------------------------------------------------------------------------
+\section{Custom Linux Distributions}
+\subsection{BerserkArch Linux}
+
+\begin{projectbox}[\href{https://berserkarch.xyz/}{Website} $|$ \href{https://github.com/berserkarch}{GitHub}]{Project Overview}
+	\textbf{Stack:} Arch Linux, Bash, GitHub Actions (CI/CD), Docker \\
+	\textbf{Description:} A custom security-focused Arch Linux distribution. I manage the entire release engineering lifecycle, including automated ISO builds, mirror synchronization (SourceForge/R2), and package repository maintenance.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\textwidth]{./images/berserkarch.png}
+	\caption{\textit{BerserkArch Custom Desktop Environment (XFCE) pre-configured with security tools. Also highlights the automated CI/CD pipeline status for ISO releases.}}
+\end{figure}
+
+\subsection{Vigilante Arch (Deprecated)}
+
+\begin{projectbox}[\href{https://vigarch.cybercraftlabs.org/}{Website} $|$ \href{https://github.com/cybercraftlabs/vigarch-os}{GitHub}]{Project Overview}
+	\textbf{Stack:} Arch Linux, Tor Network, Live-Build, Python \\
+	\textbf{Description:} An amnesic, live operating system designed for extreme anonymity (similar to Tails, but Arch-based). Features \textbf{Native Tor Integration} (transparent proxying), anti-forensic RAM-only execution, and a hardened kernel configuration.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\textwidth]{./images/vigarch.png}
+	\caption{\textit{Vigilante Arch Desktop showing the "Tor Connection Established" status and the custom Amnesic wipe scripts running at shutdown.}}
+\end{figure}
+
+%----------------------------------------------------------------------------------------
+%   PROJECT 3: CAREPULSE (Full Stack)
+%----------------------------------------------------------------------------------------
+\section{Full-Stack Development}
+\subsection{CarePulse Platform}
+
+\begin{projectbox}[\href{https://carepulse-theta.vercel.app/}{Live App} $|$ \href{https://github.com/thehackersbrain/carepulse}{Source Code}]{Project Overview}
+	\textbf{Stack:} TypeScript, Next.js, Appwrite, Tailwind CSS, Twilio \\
+	\textbf{Description:} A production-ready patient management system. Features include complex HIPAA-compliant form validation (Zod), appointment scheduling, and automated SMS notifications via Twilio.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.65\textwidth]{./images/carepulse.png}
+	\caption{\textit{The Patient Registration Dashboard. Demonstrates high-fidelity UI implementation and complex state management using Next.js Server Actions.}}
+\end{figure}
+
+\begin{projectbox}[\href{https://snapgram-two-self.vercel.app}{Live App} $|$ \href{https://github.com/thehackersbrain/snapgram}{Source Code}]{Project Overview}
+	\textbf{Stack:} React.js, Appwrite, TypeScript, Tailwind CSS, React Query \\
+	\textbf{Description:} A modern social media platform featuring infinite scrolling, robust file uploads, and real-time content updates. Implements complex state management using React Query and secure authentication workflows via Appwrite.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.80\textwidth]{./images/snapgram.png}
+	\caption{\textit{Snapgram Feed Interface. Demonstrates pixel-perfect UI implementation, infinite scroll optimization, and responsive design for mobile/desktop users.}}
+\end{figure}
+
+
+%----------------------------------------------------------------------------------------
+%   EVIDENCE: LABS & CERTS
+%----------------------------------------------------------------------------------------
+\section{Operational Competency: Advanced Labs \& Certifications}
+
+\subsection{HacktheBox}
+
+\begin{projectbox}{HackTheBox \& TryHackMe Achievements}
+	\textbf{Focus:} Advanced Penetration Testing, Network Pivoting, Active Directory Exploitation. \\
+	\textbf{Highlights:} Completed "Jet Fortress" (Advanced External Pentest Lab) and ranked Top 1\% globally on TryHackMe.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	% REPLACE 'example-image' WITH YOUR SCREENSHOT: htb_proof.png (e.g., Your HTB Profile or Jet Fortress Certificate)
+	\includegraphics[width=0.85\textwidth]{example-image}
+	\caption{\textit{Visual confirmation of HackTheBox "Jet Fortress" completion and Top 1\% Global Rank on TryHackMe. Demonstrates proficiency in simulated real-world attack scenarios.}}
+\end{figure}
+
+\vspace{1em}
+\newpage
+
+%----------------------------------------------------------------------------------------
+%   EVIDENCE: VULNERABILITY ARCHITECTURE
+%----------------------------------------------------------------------------------------
+\section{Vulnerability Architecture: VulnHub Author}
+
+\begin{projectbox}[\href{https://www.vulnhub.com/author/thehackersbrain,789/}{Author Profile 1} $|$ \href{https://www.vulnhub.com/author/gaurav-raj,795/}{Author Profile 2}]{Official VM Contributions}
+	\textbf{Machines:} \textbf{\href{https://www.vulnhub.com/series/blogger,462/}{Blogger-1}}, \textbf{\href{https://www.vulnhub.com/series/corpvision,469/}{CorpVision-1}} \\
+	\textbf{Platform:} VulnHub (Official) \\
+	\textbf{Description:} Architected two boot-to-root challenges involving custom exploit chains (Webmin, Cronjobs). These VMs have been downloaded thousands of times and used for training by security professionals globally.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\href{https://www.vulnhub.com/series/blogger,462}{
+			\includegraphics[width=\textwidth]{./images/t1.png}
+		}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.48\textwidth}
+		\centering
+		\href{https://www.vulnhub.com/series/corpvision,469}{
+			\includegraphics[width=\textwidth]{./images/t2.png}
+		}
+	\end{minipage}
+	\caption{\textit{Official VulnHub Author Profile showing authored machines "Blogger" and "CorpVision". Proof of capability in designing realistic vulnerable infrastructure.}}
+\end{figure}
+%----------------------------------------------------------------------------------------
+%   EVIDENCE: CONSISTENCY
+%----------------------------------------------------------------------------------------
+\section{Consistency: 8 Years of Open Source}
+
+\begin{projectbox}{Activity Log}
+	\textbf{Summary:} Continuous contribution streak starting in 2018. \\
+	\textbf{2025 Stats:} 1,600+ Commits across 60+ Repositories.
+\end{projectbox}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{./images/github.png}
+	\caption{\textit{GitHub Contribution Graph showing daily engineering activity. Proof of long-term dedication and discipline.}}
+\end{figure}
+
+
+\end{document}
