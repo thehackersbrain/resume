@@ -65,6 +65,7 @@ pdfkeywords={Security Researcher, Systems Engineer, Red Team Operator, Penetrati
 		\href{https://github.com/thehackersbrain}{GitHub: github.com/thehackersbrain} \\
 		\href{https://thehackersbrain.dev/}{Website: thehackersbrain.dev} \\
 		\href{https://www.linkedin.com/in/thehackersbrainn}{LinkedIn: @thehackersbrainn}
+		\href{https://orcid.org/0009-0006-7136-5009}{ORCID: 0009-0006-7136-5009}
 	\end{minipage}
 \end{center}
 
@@ -75,18 +76,24 @@ pdfkeywords={Security Researcher, Systems Engineer, Red Team Operator, Penetrati
 %------------------------------------------------------------------------------------
 \section{Profile}
 
-\noindent Offensive Security Researcher \& Software Engineer with \textbf{8+ years of open-source experience (1600+ commits in 2025 alone)}. Specialized in \textbf{low-level systems programming (C/ASM/Rust), Linux internals, kernel development, and red team operations}. Creator and maintainer of BerserkArch Linux, focused on secure, automated, and scalable offensive security environments. Strong crossover between kernel engineering, cloud infrastructure, and full-stack development.
+\noindent Offensive Security Researcher \& Software Engineer, Published Author. Specialized in \textbf{low-level systems programming (C/ASM/Rust), Linux internals, kernel development, and red team operations}. Creator and maintainer of BerserkArch Linux, focused on secure, automated, and scalable offensive security environments. Strong crossover between kernel engineering, cloud infrastructure, and full-stack development.
 
-
-\section{Technical Arsenal}
+\section{Technical Skills}
 
 \begin{description}
+	\item[Red Team \& Pentest] Reverse Engineering, Network/Internal/Web Pentesting, AD Attacks, C2 (Cobalt Strike/Sliver).
+	\item[Tooling:] NetExec, Impacket, bloodyAD, Sliver C2, BloodHound, Certipy, Ghidra, IDA Pro, BurpSuite Pro.
+	\item[AI \& LLM Security:] LLM Fine-tuning, Prompt Engineering, Model Evaluation, Data Analysis, LLM Red Teaming.
 	\item[Core Languages] C, C++, Assembly, Rust, Golang, Python, Bash, Zig, JavaScript, TypeScript, Java.
 	\item[Systems Engineering] Linux Internals, Kernel Dev, Memory Management, Bootloaders, Device Drivers, Embedded/IoT.
-	\item[Full-Stack Dev] Frontend (React/Next.js/Astro.js), Mobile (Android/IOS), Desktop Apps, Backend, Automation, APIs.
-	\item[Cloud \& DevOps] AWS (SES, EC2, S3), GCP, Terraform, Vagrant, Kubernetes, Docker, Github Actions, CI/CD, Linux.
-	\item[AI \& LLM Security:] LLM Fine-tuning, Prompt Engineering, Model Evaluation, Data Analysis, LLM Red Teaming.
-	\item[Red Team \& Pentest] Reverse Engineering, Network/Internal/Web Pentesting, AD Attacks, C2 (Cobalt Strike/Sliver).
+	\item[Cloud \& DevOps:] AWS, Azure, GCP, Terraform, Vagrant, Kubernetes, Docker, Github Actions, CI/CD, Linux.
+\end{description}
+
+\section{Publications \& Academic Citations}
+
+\begin{description}
+  \item[Book:] Forged Trust - Offensive Operations Against ADCS. Covering deep fundamentals, ESC1-18, THEFT1-5, (D)PERSIST.
+  \item[Paper:] Certificate of Compromise, a full-taxonomy ADCS SoK/Whitepaper. Published on Zenodo (10.5281/zenodo.20732733).
 \end{description}
 
 \section{Security \& Engineering Experience}
@@ -117,38 +124,20 @@ pdfkeywords={Security Researcher, Systems Engineer, Red Team Operator, Penetrati
 \projectSubheading
 {THBOS (Custom x86 Kernel)}{https://github.com/thehackersbrain/cpuinfo-os}{Source Code}
 {\textit{Systems Programming (C, Assembly \& Zig)}}
-\begin{itemize}
-	\item \textbf{Kernel Dev}: Built a 64-bit \textbf{kernel from scratch}, including \textbf{custom bootloader} for Protected mode.
-	\item \textbf{Hardware Interaction}: Directly manipulated \textbf{CPU} registers to use \textit{CPUID} instruction set to fetch processor topology.
-\end{itemize}
-
-\vspace{2pt}
-
-\subsection*{CarePulse $|$ \normalfont\textit{\href{https://carepulse-theta.vercel.app/}{Live App}} | \textit{\href{https://github.com/thehackersbrain/carepulse}{Source Code}} \hfill \textit{Healthcare Platform (Next.js, TypeScript, Appwrite)}}
-\vspace{3pt}
-\begin{itemize}
-	\item \textbf{Dev:} HIPAA-aligned patient management system with server actions, Zod validation, Twilio SMS workflows, and next.js
-	\item \textbf{System Design}: Built a scalable backend with admin panel with Server Actions for secure data handling.
-\end{itemize}
-
+64-bit OS kernel from scratch with custom bootloader, Protected Mode, CPUID-driven topology.
 \vspace{2pt}
 
 \projectSubheading
 {Chip8 Emulator}{https://github.com/thehackersbrain/chip8}{github.com/thehackersbrain/chip8}
 {\textit{Systems Emulation (Rust)}}
-\begin{itemize}
-	\item \textbf{Emulation Logic:} A functional CHIP-8 emulator in Rust, with fetch-decode-execute cycle and stack management.
-	\item \textbf{Memory Safety:} Leveraged Rust's borrow checker to ensure memory safety while handling raw bytecode execution.
-\end{itemize}
+Functional CHIP-8 emulator with Full fetch-decode-execute cycle with memory-safe bytecode handling via borrow checker.
 
 \vspace{2pt}
 
 \projectSubheading
 {HiddenWave}{https://github.com/thehackersbrain/hiddenwave}{github.com/thehackersbrain/hiddenwave}
 {\textit{Steganography Tool (C++ \& Python)}}
-\begin{itemize}
-	\item \textbf{DSA:} Implemented Least Significant Bit encoding algorithm in C++ to hide encrypted payloads inside WAV/MP3 audio.
-\end{itemize}
+LSB audio steganography engine with WAV/MP3 support, also featured in a Netflix's series Gyeongseong Creature S2E1.
 
 \section{Achievements \& Certifications}
 
@@ -167,5 +156,8 @@ pdfkeywords={Security Researcher, Systems Engineer, Red Team Operator, Penetrati
 	\textit{Specialization}:   & \textit{Advanced Mathemetics (ie. Calculus, Linear Algebra)} & \textbf{-}                       \\
 	% \textit{Background}:               & \textit{Transferred from B.Sc (Maths Hons)}.                & \textbf{3rd Year}                      \\
 \end{tabular}
+
+\vspace{3pt}
+\textit{Extensive self-directed study across red team op, adversary simulation, EDR and AV evasion, AD and windows internals.}
 
 \end{document}
