@@ -76,12 +76,19 @@ pdfkeywords={Security Researcher, Systems Engineer, Red Team Operator, Penetrati
 %------------------------------------------------------------------------------------
 \section{Profile}
 
-\noindent Offensive Security Researcher \& Software Engineer, Published Author. Specialized in \textbf{low-level systems programming (C/ASM/Rust), Linux internals, kernel development, and red team operations}. Creator and maintainer of BerserkArch Linux, focused on secure, automated, and scalable offensive security environments. Strong crossover between kernel engineering, cloud infrastructure, and full-stack development.
+\noindent Offensive security researcher and published author specialising in \textbf{red team operations, Active Directory / Kerberos, reverse engineering, and kernel development}. Author of the book \textit{Forged Trust} and a full-taxonomy ADCS whitepaper, running penetration testing engagements end to end from client contact through to delivery. Creator of BerserkArch Linux, focused on secure, automated, and scalable offensive security environments. Supported by deep low-level systems experience (C/Assembly/Rust) and Linux internals.
+
+\section{Publications \& Academic Citations}
+
+\begin{description}
+  \item[Book:] \href{https://www.amazon.com/Forged-Trust-Offensive-Operations-Certificate/dp/9360120405}{\textit{Forged Trust - Offensive Operations Against ADCS}}. Deep fundamentals of ESC1-18, THEFT1-5, and (D)PERSIST.
+  \item[Paper:] \href{https://github.com/thehackersbrain/certificate-of-compromise}{\textit{Certificate of Compromise}}, a full-taxonomy ADCS SoK / whitepaper. \href{https://zenodo.org/records/20732733}{\textit{DOI: 10.5281/zenodo.20732733}}.
+\end{description}
 
 \section{Technical Skills}
 
 \begin{description}
-	\item[Red Team \& Pentest] Reverse Engineering, Network/Internal/Web Pentesting, AD Attacks, C2 (Cobalt Strike/Sliver).
+  \item[Red Team \& Pentest] Reverse Engineering, Network/Internal/Web Pentesting, AD Attacks, C2 (Cobalt Strike/Sliver).
 	\item[Tooling:] NetExec, Impacket, bloodyAD, Sliver C2, BloodHound, Certipy, Ghidra, IDA Pro, BurpSuite Pro.
 	\item[AI \& LLM Security:] LLM Fine-tuning, Prompt Engineering, Model Evaluation, Data Analysis, LLM Red Teaming.
 	\item[Core Languages] C, C++, Assembly, Rust, Golang, Python, Bash, Zig, JavaScript, TypeScript, Java.
@@ -89,34 +96,27 @@ pdfkeywords={Security Researcher, Systems Engineer, Red Team Operator, Penetrati
 	\item[Cloud \& DevOps:] AWS, Azure, GCP, Terraform, Vagrant, Kubernetes, Docker, Github Actions, CI/CD, Linux.
 \end{description}
 
-\section{Publications \& Academic Citations}
-
-\begin{description}
-  \item[Book:] Forged Trust - Offensive Operations Against ADCS. Covering deep fundamentals, ESC1-18, THEFT1-5, (D)PERSIST.
-  \item[Paper:] Certificate of Compromise, a full-taxonomy ADCS SoK/Whitepaper. Published on Zenodo (10.5281/zenodo.20732733).
-\end{description}
-
 \section{Security \& Engineering Experience}
 
 \resumeSubheading
-{BerserkArch Linux Distro Project}{Remote}
+{\href{https://berserkarch.org}{BerserkArch Linux Distro Project}}{Remote}
 {Lead Maintainer, Developer \& Systems Architect}{2025 - Present}
 \begin{itemize}
 	\item \textbf{OS:} Designed and maintain an \textbf{Arch Linux–based} distribution for red team operations and secure development.
-	\item \textbf{CI/CD:} Built fully automated ISO CI/CD pipelines using \textbf{GitHub Actions} and Docker (build, sign, checksum, deploy)
-	\item \textbf{Containerization:} Published official \textbf{Docker} images for portable offensive security labs and rapid development.
+	\item \textbf{CI/CD:} Built fully automated ISO CI/CD pipelines using \textbf{GitHub Actions} and Docker (build, sign, checksum, deploy).
+	\item \textbf{Containerisation:} Published official \textbf{Docker} images for portable offensive security labs and rapid development.
 	\item \textbf{Security Hardening:} Implemented \textbf{custom kernel patches} and \textbf{AppArmor profiles} for system hardening.
 \end{itemize}
 
 \vspace{2pt}
 
 \resumeSubheading
-{Cybercraft Labs Pvt Ltd}{Patna, Bihar}
-{Founder \& Principal Engineer (Security Consultancy)}{Sept 2023 -- Nov 2024}
+{Cybercraft Labs}{Patna, Bihar}
+{Independent Security Consultant}{Sept 2023 -- Nov 2025}
 \begin{itemize}
-	\item \textbf{Agency Leadership:} Founded and operated an independent security consultancy, managing client lifecycles from technical consultation to delivery of penetration testing and cloud security solutions.
-	\item \textbf{Cloud Architecture:} Architected \textbf{AWS/GCP} hybrid infrastructures, hardened EC2, configured SES (DKIM/DMARC).
-	\item \textbf{Software Development:} Developed full-stack web applications, desktop tools, and custom reconnaissance automation (Python/Go/Rust), optimizing client workflows and reducing manual testing time by 40\%.
+	\item \textbf{Penetration Testing:} Delivered network, web, and cloud penetration testing engagements for clients end to end, running each from initial contact and scoping through to reporting and remediation guidance.
+	\item \textbf{Cloud Hardening:} Hardened client \textbf{AWS/GCP} hybrid infrastructure, including EC2 hardening and SES email authentication (DKIM/DMARC).
+	\item \textbf{Software Development:} Designed and delivered bespoke client software to specification, including full-stack web applications, desktop tools, and custom reconnaissance automation that streamlined engagement workflows.
 \end{itemize}
 
 \section{Key R\&D Projects}
@@ -137,15 +137,14 @@ Functional CHIP-8 emulator with Full fetch-decode-execute cycle with memory-safe
 \projectSubheading
 {HiddenWave}{https://github.com/thehackersbrain/hiddenwave}{github.com/thehackersbrain/hiddenwave}
 {\textit{Steganography Tool (C++ \& Python)}}
-LSB audio steganography engine with WAV/MP3 support, also featured in a Netflix's series Gyeongseong Creature S2E1.
+LSB audio steganography engine with WAV/MP3 support. Featured in the Netflix series Gyeongseong Creature (S2E1).
 
-\section{Achievements \& Certifications}
+\section{Achievements}
 
 \begin{itemize}[leftmargin=2em]
 	\item \textbf{VulnHub:} Designed 2 vulnerable VMs (\href{https://www.vulnhub.com/entry/blogger-1,675/}{\textit{Blogger}}, \href{https://www.vulnhub.com/entry/corpvision-1,691/}{\textit{CorpVision}}) with custom exploit chains (Webmin, Cronjob privesc).
 	\item \textbf{Advanced Security Labs:} Completed \textbf{HackTheBox Fortresses} (Jet) \& \textbf{TryHackMe Networks} (Wreath, Holo), mastering pivoting, AD exploitation, and perimeter breaching.
 	\item \textbf{Global Rankings:} \textbf{Top 1\% on TryHackMe} (CTF) $|$ \textbf{HackerRank Gold Badge} (Problem Solving \& Algorithms).
-	\item \textbf{Certifications:} Certified proficiency in \textbf{Computer Forensics}, \textbf{Malware Analysis}, and \textbf{Active Directory Security} (Udemy/Independent Coursework).
 \end{itemize}
 
 
@@ -153,7 +152,7 @@ LSB audio steganography engine with WAV/MP3 support, also featured in a Netflix'
 
 \begin{tabular}{@{} p{0.3\textwidth} p{0.49\textwidth} r @{}}
 	\textbf{B.Sc (Maths Hons)} & \textit{Patliputra University, Patna}                        & \textbf{2027 (\textit{ongoing})} \\
-	\textit{Specialization}:   & \textit{Advanced Mathemetics (ie. Calculus, Linear Algebra)} & \textbf{-}                       \\
+	\textit{Specialisation}:   & \textit{Advanced Mathematics (i.e. Calculus, Linear Algebra)} & \textbf{-}                       \\
 	% \textit{Background}:               & \textit{Transferred from B.Sc (Maths Hons)}.                & \textbf{3rd Year}                      \\
 \end{tabular}
 
